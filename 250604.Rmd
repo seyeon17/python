@@ -1,0 +1,64 @@
+---
+title: '250604'
+author: "jsy"
+date: "2025-06-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(knitr)
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, eval = FALSE}
+opts_chunk$get()
+```
+
+<br><br><br>
+
+iris 데이터 셋에는 `r nrow(iris)`개의 관측값과 `r ncol(iris)`개의 변수가 있습니다.
+
+<br><br><br>
+
+
+
+
+# results = "markup"(default)
+```{r, results = "markup"}
+cat("I'm raw **Markdown** content.\n")
+```
+
+# results = "asis"
+```{r, results = "asis"}
+cat("I'm raw **Markdown** content.\n")
+```
+
+
+
+```{r cars, echo=TRUE, eval=FALSE}
+summary(cars)
+```
+
+```{r pressure, echo=FALSE, fig.show='hide'}
+plot(pressure)
+```
+
+
+```{r}
+head(iris)
+```
+
+
+```{r}
+kable(head(iris))
+```
+
+
+
+
+
+
+
+
